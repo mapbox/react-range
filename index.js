@@ -25,9 +25,9 @@ var Range = React.createClass({
     });
     delete props.value;
     return React.createElement(
-        'input',
-        props
-      )
+      'input',
+      props
+    )
   }
 });
 
