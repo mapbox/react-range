@@ -26,7 +26,7 @@
     "eslint-plugin-react": "^2.2.0"
   },
   "author": "Bobby Sudekum",
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git@github.com:mapbox/react-range.git"
