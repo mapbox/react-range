@@ -1,0 +1,28 @@
+{
+  "name": "react-range",
+  "version": "0.0.1",
+  "description": "A react component that makes input type=range compatible across all browsers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "input"
+    "type",
+    "range",
+    "IE",
+    "onChange"
+  ],
+  "dependencies": {
+    "react": "^0.13.0"
+  },
+  "author": "Bobby Sudekum",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mapbox/react-range.git"
+  }
+}
