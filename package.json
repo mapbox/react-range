@@ -4,13 +4,13 @@
   "description": "A react component that makes input type=range compatible across all browsers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint --no-eslintrc -c .eslintrc index.js"
   },
   "keywords": [
     "react",
     "react-component",
     "component",
-    "input"
+    "input",
     "type",
     "range",
     "IE",
@@ -18,6 +18,12 @@
   ],
   "dependencies": {
     "react": "^0.13.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.22",
+    "babel-eslint": "^3.0.1",
+    "eslint": "^0.20.0",
+    "eslint-plugin-react": "^2.2.0"
   },
   "author": "Bobby Sudekum",
   "license": "ISC",
