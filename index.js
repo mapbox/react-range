@@ -13,7 +13,8 @@ var Range = React.createClass({
     return {
       type: 'range',
       onMouseMove: function(){},
-      onKeyDown: function(){}
+      onKeyDown: function(){},
+      onChange: function(){}
     };
   },
   onRangeChange: function(e) {
@@ -23,7 +24,7 @@ var Range = React.createClass({
   },
   onRangeKeyDown: function(e) {
     this.props.onKeyDown(e);
-    if (this.props.onChange) this.props.onChange(e);
+    this.props.onChange(e);
   },
   componentWillReceiveProps: function(props) {
     React.findDOMNode(this).value = props.value;
