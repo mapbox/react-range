@@ -20,7 +20,7 @@ var Range = React.createClass({
     if (this.props.onChange) this.props.onChange(e);
   },
   onRangeKeyDown: function(e) {
-    if (this.props.onMouseMove) this.props.onMouseMove(e);
+    if (this.props.onKeyDown) this.props.onKeyDown(e);
     if (this.props.onChange) this.props.onChange(e);
   },
   componentWillReceiveProps: function(props) {
