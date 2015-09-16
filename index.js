@@ -19,6 +19,10 @@ var Range = React.createClass({
     if (e.buttons !== 1) return;
     if (this.props.onChange) this.props.onChange(e);
   },
+  onRangeKeyDown: function(e) {
+    if (this.props.onMouseMove) this.props.onMouseMove(e);
+    if (this.props.onChange) this.props.onChange(e);
+  },
   componentWillReceiveProps: function(props) {
     React.findDOMNode(this).value = props.value;
   },
@@ -26,6 +30,7 @@ var Range = React.createClass({
     var props = _extends({}, this.props, {
       defaultValue: this.props.value,
       onMouseMove: this.onRangeChange,
+      onKeyDown: this.onRangeKeyDown,
       onChange: function() {}
     });
     delete props.value;
