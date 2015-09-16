@@ -11,16 +11,18 @@ var Range = React.createClass({
   },
   getDefaultProps: function() {
     return {
-      type: 'range'
+      type: 'range',
+      onMouseMove: function(){},
+      onKeyDown: function(){}
     };
   },
   onRangeChange: function(e) {
-    if (this.props.onMouseMove) this.props.onMouseMove(e);
+    this.props.onMouseMove(e);
     if (e.buttons !== 1) return;
     if (this.props.onChange) this.props.onChange(e);
   },
   onRangeKeyDown: function(e) {
-    if (this.props.onKeyDown) this.props.onKeyDown(e);
+    this.props.onKeyDown(e);
     if (this.props.onChange) this.props.onChange(e);
   },
   componentWillReceiveProps: function(props) {
