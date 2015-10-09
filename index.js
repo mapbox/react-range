@@ -22,7 +22,7 @@ var Range = React.createClass({
   },
   onRangeChange: function(e) {
     this.props.onMouseMove(e);
-    if (e.buttons !== 1 && event.which !== 1) return;
+    if (e.buttons !== 1 && e.which !== 1) return;
     this.props.onChange(e);
   },
   onRangeClick: function(e) {
