@@ -17,7 +17,8 @@
     "onChange"
   ],
   "dependencies": {
-    "react": "^0.13.0"
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
   },
   "devDependencies": {
     "babel-core": "^5.8.22",
