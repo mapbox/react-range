@@ -1,7 +1,6 @@
 'use strict';
 
 var React = require('react');
-var ReactDOM = require('react-dom');
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var Range = React.createClass({
@@ -34,8 +33,11 @@ var Range = React.createClass({
     this.props.onKeyDown(e);
     this.props.onChange(e);
   },
+  setRangeRef: function(ref) {
+    this.range = ref;
+  },
   componentWillReceiveProps: function(props) {
-    ReactDOM.findDOMNode(this).value = props.value;
+    this.range.value = props.value;
   },
   render: function() {
     var props = _extends({}, this.props, {
@@ -43,7 +45,8 @@ var Range = React.createClass({
       onClick: this.onRangeClick,
       onKeyDown: this.onRangeKeyDown,
       onMouseMove: this.onRangeChange,
-      onChange: function() {}
+      onChange: function() {},
+      ref: this.setRangeRef
     });
     delete props.value;
     return React.createElement(
