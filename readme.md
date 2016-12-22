@@ -11,7 +11,7 @@ It is a [known issue](https://github.com/facebook/react/issues/554) the `onChang
 You can pass in any `props` and `className`s as necessary:
 
 ```jsx
-var Range = require('react-range');
+var Range = require('@mapbox/react-range');
 
 <Range
   className='slider'
