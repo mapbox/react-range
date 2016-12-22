@@ -1,5 +1,5 @@
 {
-  "name": "react-range",
+  "name": "@mapbox/react-range",
   "version": "0.0.7",
   "description": "A react component that makes input type=range compatible across all browsers",
   "main": "index.js",
