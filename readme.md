@@ -1,3 +1,9 @@
+### ⚠️ This repo is archived ⚠️
+
+For a maintained alternative, check out https://mapbox.github.io/mr-ui/#controlrange.
+
+---
+
 # React Range
 
 A react component that makes `<input type='range' />` compatible across all browsers.
